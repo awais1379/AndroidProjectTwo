@@ -6,5 +6,9 @@ import org.junit.Test
 
 class EmailValidatorTest {
 
+    @Test
+    fun testValidEmail() {
+        assertTrue(EmailValidator.isValidEmail("123@abc.com"))
+    }
 
 }
