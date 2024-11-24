@@ -78,7 +78,7 @@ class MainActivityInstrumentedTest {
     }
 
     @Test
-    fun useAppContext() { // Context of the app under test.
+    fun useAppContext() { // Context of the app under test. 
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.example.android.testing.espresso.BasicSample", appContext.packageName)
     }
