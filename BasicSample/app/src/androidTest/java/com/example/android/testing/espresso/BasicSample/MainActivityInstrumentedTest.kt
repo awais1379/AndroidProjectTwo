@@ -76,4 +76,10 @@ class MainActivityInstrumentedTest {
             assertEquals("", showTextView.text.toString())
         }
     }
+
+    @Test
+    fun useAppContext() {
+        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
+        assertEquals("com.example.android.testing.espresso.BasicSample", appContext.packageName)
+    }
 }
